@@ -13,13 +13,12 @@ alert(`Numeros en orden ascendente:\n${numeros.join(" ")}`);
 
 //Array de objetos
 
-let persona = { nombre: "Jonatan", edad: 32 };
-let persona1 = { nombre: "Emiliano", edad: 30 };
+let personas = [
+  { nombre: "Jonatan", edad: 32 },
+  { nombre: "Emiliano", edad: 30 },
+  { nombre: "Sabrina", edad: 38 },
+];
 
-const personas = [persona, persona1];
+personas.sort();
 
-personas.push({ nombre: "Sabrina", edad: 38 });
-
-for (const nombre of personas) {
-  alert(nombre.edad);
-}
+console.log(personas);
