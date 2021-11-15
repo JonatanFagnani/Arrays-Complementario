@@ -22,3 +22,16 @@ let personas = [
 personas.sort();
 
 console.log(personas);
+
+//Array ordenado con variables previamente establecidas
+
+let Jonatan = 32;
+let Sabrina = 39;
+let Juan = 49;
+let Lucas = 38;
+
+let people = [Jonatan, Sabrina, Juan, Lucas];
+people.sort(function (a, b) {
+  return a - b;
+});
+alert(`Edades en orden ascendente:\n${people.join(" ")}`);
